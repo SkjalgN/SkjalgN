@@ -1,0 +1,13 @@
+
+<!-- projects/project_index.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Projects</h2>
+<ul>
+{% for project in portfolio %}
+    <li>{{ project.title }} - {{ project.description }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

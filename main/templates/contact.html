@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'stylesmain.css' %}">
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'scriptmain.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<!-- Your home.html content goes here -->
+<div class="container1123">
+    <h1 class="text-center">Contact</h1>
+    <div class="card-group">
+        <div class="card m-4">
+            <img src="static/images/gmail.png" class="card-img-top imgstyle" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mail</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card m-4">
+            <img src="static/images/linkedin.png" class="card-img-top imgstyle" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Linkedin</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card m-4">
+            <img src="static/images/github.png" class="card-img-top imgstyle" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Github</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
