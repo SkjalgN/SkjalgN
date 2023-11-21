@@ -33,7 +33,11 @@ Here's some key features:
 <!-- GETTING STARTED -->
 ## Getting Started
 
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+pip install -r requirements.txt
 
+pip freeze > requirements.txt
 
 ### Built With
 
