@@ -3,8 +3,17 @@
 
 {% extends "base.html" %}
 
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'stylesPortfolio.css' %}">
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'scriptPortfolio.js' %}"></script>
+{% endblock %}
+
 {% block content %}
-<h2>Projects</h2>
+<h1 class="text-center">Portfolio</h1>
 <ul>
 {% for project in portfolio %}
     <li>{{ project.title }} - {{ project.description }}</li>

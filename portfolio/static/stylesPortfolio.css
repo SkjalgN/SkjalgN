@@ -13,12 +13,3 @@
     padding: 0;
     border: 1px solid black;
 }
-
-.test{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: green;
-    top: 50%;
-    left: 50%;
-}
