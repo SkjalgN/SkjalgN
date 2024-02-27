@@ -1,4 +1,3 @@
-
 <!-- projects/project_index.html -->
 
 {% extends "base.html" %}
@@ -15,8 +14,11 @@
 {% block content %}
 <h1 class="text-center">Portfolio</h1>
 <ul>
-{% for project in portfolio %}
-    <li>{{ project.title }} - {{ project.description }}</li>
-{% endfor %}
+    {% for project in portfolio %}
+    <li>
+        <img src="{{project.image}}" alt="" class="projectimage">
+        {{ project.title }} - {{ project.description }}
+    </li>
+    {% endfor %}
 </ul>
 {% endblock %}

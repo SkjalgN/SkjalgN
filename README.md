@@ -39,6 +39,31 @@ pip install -r requirements.txt
 
 pip freeze > requirements.txt
 
+## Usage Instructions
+Clone this repository e.g.
+
+'''
+git clone git@github.com:deparkes/simple-django-app.git
+'''
+
+Navigate to the 'cool_counters' Django project:
+
+'''
+cd simple-django-app/cool_counters
+'''
+
+Run migrations to update/create database
+'''
+python manage.py migrate
+'''
+
+Run the Django development server
+'''
+python manage.py runserver
+'''
+
+Navigate to http://127.0.0.1:8000
+
 ### Built With
 
 * Django

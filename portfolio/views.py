@@ -11,6 +11,8 @@ def portfolio(request):
     projects = Portfolio.objects.all()
     return render(request, 'portfolio.html', {'portfolio': projects})
 
+
+
 def project_detail(request, pk):
     project = Portfolio.objects.get(pk=pk)
-    return render(request, 'project_detail.html', {'portfolio': project})
+    return render(request, 'project_detail.html', {'project': project})
