@@ -16,7 +16,8 @@
 <ul>
     {% for project in portfolio %}
     <li>
-        <img src="{{project.image}}" alt="" class="projectimage">
+        <img src="{{project.image.url}}" alt="" class="projectimage">
+        <p>{{project.image.url}}</p>
         {{ project.title }} - {{ project.description }}
     </li>
     {% endfor %}
