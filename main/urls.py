@@ -5,7 +5,7 @@ from django.views.generic import RedirectView
 
 
 urlpatterns = [
-    path('', RedirectView.as_view(url='home'), name='redirect-to-home'),
+    path('', views.base, name='base'),
     path('home', views.home, name='home'),
     path('contact', views.contact, name='contact'),
     path('portfolio', include('portfolio.urls')),

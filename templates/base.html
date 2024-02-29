@@ -6,40 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     {% load static %}
-    {% block extra_css %}
-    {% endblock %}
     <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto" id="navbarLinks">
-                <li class="nav-item">
-                    <a class="nav-link" href="/home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="container1">
+            <div class="uppernav">
+                <img src="{% static 'images/profilepicture.jpg' %}" alt="" class="profileimage">
+                <p class="name">Skjalg Nysaeter</p>
+                <p class="undername">Web Developer</p>
+            </div>
+            <div class="middlenav">
+                <ul id="navlist">
+                    <li id="navcontent1" onclick="changescene('content1')" class="active">Home</li>
+                    <li id="navcontent2" onclick="changescene('content2')">Projects</li>
+                    <li id="navcontent3" onclick="changescene('content3')">Contact</li>
+                </ul>
+            </div>
+            <div class="bottomnav">
+                <div class="icondiv">
+                    <a href="https://www.linkedin.com/in/skjalg-nysaeter-3b3b3b1b3/"><img
+                            src="{% static 'images/linkedinicon.png' %}" alt=""></a>
+                    <a href="https://www.facebook.com/skjalg.nysaeter"><img src="{% static 'images/facebookicon.png' %}"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/skjalg_nysaeter/"><img
+                            src="{% static 'images/instagramicon.png' %}" alt=""></a>
+                    <a href="https://www.github.com/skjalg-nysaeter"><img src="{% static 'images/githubicon.png' %}"
+                            alt=""></a>
+                </div>
+            </div>
         </div>
-    </nav>
-    <div class="container2">
-    {% block content %}
-    {% block extra_js %}
-    {% endblock %}
-    {% endblock %}
+        <div class="container2">
+            <div id="slider">
+                <div id="content1" class="content">
+                    <div class="cv1">
+                        <p>Skjalg Nysaeter</p>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="cv1">
+                        <div class="cv12">
+                            <p>Skjalg Nysaeter</p>
+                            <p>Web Developer</p>
+                        </div>
+                        <div class="cv12">
+                            <p>Skjalg Nysaeter</p>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="divider2"></div>
+                <div id="content2" class="content">
+                    <p>Hva skjer</p>
+                    <p>Hva skjer</p>
+                    <p>Hva skjer</p>
+                    <p>Hva skjer</p>
+                    <p>Hva skjer</p>
+                    <p>Hva skjer</p>
+                </div>
+                <div class="divider"></div>
+                <div class="divider2"></div>
+                <div id="content3" class="content">
+                    <p>Ekstra content</p>
+                    <p>Ekstra content</p>
+                    <p>Ekstra content</p>
+                    <p>Ekstra content</p>
+                    <p>Ekstra content</p>
+                    <p>Ekstra content</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="{% static 'script.js' %}"></script>
 </body>

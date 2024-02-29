@@ -1,14 +1,27 @@
+function DOMContentLoaded() {
+}
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    var navbarLinks = document.querySelectorAll('#navbarLinks .nav-link');
-    var currentLocation = location.pathname;
-    console.log(currentLocation);
-    navbarLinks.forEach(function(link) {
-        if (link.getAttribute('href') === currentLocation) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
+
+function changescene(content){
+    document.getElementById("slider").classList.remove("active1")
+    document.getElementById("slider").classList.remove("active2")
+    document.getElementById("slider").classList.remove("active3")
+    if(content == "content1"){
+        document.getElementById("slider").classList.add("active1")
+    }
+    else if (content == "content2"){
+        document.getElementById("slider").classList.add("active2")
+
+    }
+    else if (content == "content3"){
+        document.getElementById("slider").classList.add("active3")
+    }
+    scenes = document.querySelectorAll('#navlist li');
+    scenes.forEach(content => {
+        content.classList.remove('active');
     });
-});
+    document.getElementById("nav"+content).classList.add('active');
+
+
+}
