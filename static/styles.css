@@ -242,22 +242,39 @@ body {
 #content3 {}
 
 .cv1 {
-    background: url('static/images/gloesS.webp') no-repeat center center fixed;
+    background:  linear-gradient(270deg,rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9)50%),url('images/gloesW.png') no-repeat center center fixed;
     background-size: cover;
-    /* Adjust this property as needed */
     width: 100%;
     height: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: blue;
-    background: linear-gradient(90deg, rgba(152, 152, 152, 0.5), rgba(255, 255, 255, 0.0)), url('https://images.unsplash.com/photo-1612838320303-3e3e3e3e3e3e');
+    justify-content: start;
+    align-items: start;
 }
 
 .cv12 {
     width: 50%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(152, 152, 152, 0.5), rgba(255, 255, 255, 0.0)), url('https://images.unsplash.com/photo-1612838320303-3e3e3e3e3e3e');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv13 {
+    width: 50%;
+    height: 100%;
+    border-radius:0 0 0 50% ;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.2)100%), url('images/fjelltur.JPG') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cv3 {
+    width: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
