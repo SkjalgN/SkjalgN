@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'chesstyles.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'chesscript.js' %}"></script>
+<script src="{% static 'chesscript2.js' %}"></script>
+{% endblock %}
+
+{% block navbar %}
+<li id="navcontent1"><a href="/home">Home</a></li>
+{% endblock %}
+
+{% block content %}
+
+<div class="contentyo">
+
+<button class="reset" onclick="resetBoard()">Reset Board</button>
+
+<div class="chessboard">
+    <div class="row row1">
+        <div class="hnr">8</div>
+        <div class="square sq1 black" id="a8"></div>
+        <div class="square sq2 black" id="b8"></div>
+        <div class="square sq1 black" id="c8"></div>
+        <div class="square sq2 black" id="d8"></div>
+        <div class="square sq1 black" id="e8"></div>
+        <div class="square sq2 black" id="f8"></div>
+        <div class="square sq1 black" id="g8"></div>
+        <div class="square sq2 black" id="h8"></div>
+    </div>
+    <div class="row row2">
+        <div class="hnr">7</div>
+        <div class="square sq2 black" id="a7"></div>
+        <div class="square sq1 black" id="b7"></div>
+        <div class="square sq2 black" id="c7"></div>
+        <div class="square sq1 black" id="d7"></div>
+        <div class="square sq2 black" id="e7"></div>
+        <div class="square sq1 black" id="f7"></div>
+        <div class="square sq2 black" id="g7"></div>
+        <div class="square sq1 black" id="h7"></div>
+    </div>
+    <div class="row row3">
+        <div class="hnr">6</div>
+        <div class="square sq1" id="a6"></div>
+        <div class="square sq2" id="b6"></div>
+        <div class="square sq1" id="c6"></div>
+        <div class="square sq2" id="d6"></div>
+        <div class="square sq1" id="e6"></div>
+        <div class="square sq2" id="f6"></div>
+        <div class="square sq1" id="g6"></div>
+        <div class="square sq2" id="h6"></div>
+    </div>
+    <div class="row row4">
+        <div class="hnr">5</div>
+        <div class="square sq2" id="a5"></div>
+        <div class="square sq1" id="b5"></div>
+        <div class="square sq2" id="c5"></div>
+        <div class="square sq1" id="d5"></div>
+        <div class="square sq2" id="e5"></div>
+        <div class="square sq1" id="f5"></div>
+        <div class="square sq2" id="g5"></div>
+        <div class="square sq1" id="h5"></div>
+    </div>
+    <div class="row row5">
+        <div class="hnr">4</div>
+        <div class="square sq1" id="a4"></div>
+        <div class="square sq2" id="b4"></div>
+        <div class="square sq1" id="c4"></div>
+        <div class="square sq2" id="d4"></div>
+        <div class="square sq1" id="e4"></div>
+        <div class="square sq2" id="f4"></div>
+        <div class="square sq1" id="g4"></div>
+        <div class="square sq2" id="h4"></div>
+    </div>
+    <div class="row row6">
+        <div class="hnr">3</div>
+        <div class="square sq2" id="a3"></div>
+        <div class="square sq1" id="b3"></div>
+        <div class="square sq2" id="c3"></div>
+        <div class="square sq1" id="d3"></div>
+        <div class="square sq2" id="e3"></div>
+        <div class="square sq1" id="f3"></div>
+        <div class="square sq2" id="g3"></div>
+        <div class="square sq1" id="h3"></div>
+    </div>
+    <div class="row row7">
+        <div class="hnr">2</div>
+        <div class="square sq1 white" id="a2"></div>
+        <div class="square sq2 white" id="b2"></div>
+        <div class="square sq1 white" id="c2"></div>
+        <div class="square sq2 white" id="d2"></div>
+        <div class="square sq1 white" id="e2"></div>
+        <div class="square sq2 white" id="f2"></div>
+        <div class="square sq1 white" id="g2"></div>
+        <div class="square sq2 white" id="h2"></div>
+    </div>
+    <div class="row row8">
+        <div class="hnr">1</div>
+        <div class="square sq2 white" id="a1"></div>
+        <div class="square sq1 white" id="b1"></div>
+        <div class="square sq2 white" id="c1"></div>
+        <div class="square sq1 white" id="d1"></div>
+        <div class="square sq2 white" id="e1"></div>
+        <div class="square sq1 white" id="f1"></div>
+        <div class="square sq2 white" id="g1"></div>
+        <div class="square sq1 white" id="h1"></div>
+    </div>
+    <div class="row row9">
+        <div class="hnr"></div>
+        <div class="vnr">a</div>
+        <div class="vnr">b</div>
+        <div class="vnr">c</div>
+        <div class="vnr">d</div>
+        <div class="vnr">e</div>
+        <div class="vnr">f</div>
+        <div class="vnr">g</div>
+        <div class="vnr">h</div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

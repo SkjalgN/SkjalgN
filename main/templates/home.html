@@ -4,11 +4,144 @@
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'stylesmain.css' %}">
 {% endblock %}
-{% block extra_js2 %}
-<script src="{% static 'scriptmain.js' %}"></script>
-{% endblock %}
-
-{% block content1 %}
-<!-- Your home.html content goes here -->
+{% block extra_js %}
 
 {% endblock %}
+
+{% block navbar %}
+<li id="navcontent1" onclick="changescene('content1')" class="active">Home</li>
+<li id="navcontent2" onclick="changescene('content2')">Projects</li>
+<li id="navcontent3" onclick="changescene('content3')">Contact</li>
+<li id="navcontent4" onclick="changescene('content4')">My DataBase</li>
+<li id="navcontent5"><a href="/chess">To Chessboard</a></li>
+{% endblock %}
+{% endblock % }
+
+{% block content %}
+<div id="slider">
+    <div id="content1" class="content">
+        <div class="cv3">
+            <div class="cv12">
+                <h3>ABOUT ME</h3>
+                <p>I am 23 years old and studying Engineering and ICT at NTNU Trondheim.
+                    I am currently in my fourth year of my master's degree, and I am taking
+                    this year on exchange at Queensland University of Technology in Brisbane,
+                    Australia. Over the years, I have held two leadership positions in Trondheim:
+                    Board-position for the career days "IV-dagene" and Head of the Sports Committee
+                    for the student association. As a person, I am organized and self-driven. I enjoy
+                    taking on challenging tasks, while also recognizing when others excel in certain
+                    areas. I am equally comfortable working independently or as part of a team,
+                    and I rarely encounter conflicts that cannot be resolved.</p>
+            </div>
+            <div class="cv13">
+
+            </div>
+        </div>
+        <div class="cv1">
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="divider2"></div>
+    <div id="content2" class="content">
+        <div class="outerdiv">
+            <ul class="projectlist">
+                <li id="project1" class="projectitem">
+                    <div class="projectscard">
+                        <div class="leftcard">
+                            <h1>Project 1</h1>
+                            <p>This was my first project. I started it in 2018 and continued through 2019
+                            </p>
+                        </div>
+                        <div class="rightcard">
+                            <img src="{% static 'images/profilepicture.jpg' %}" alt="" class="projectimage">
+                        </div>
+                    </div>
+                </li>
+                <li id="project1" class="projectitem">
+                    <div class="projectscard">
+                        <div class="leftcard">
+                            <h1>Project 1</h1>
+                            <p>This was my first project. I started it in 2018 and continued through 2019
+                            </p>
+                        </div>
+                        <div class="rightcard">
+                            <img src="{% static 'images/profilepicture.jpg' %}" alt="" class="projectimage">
+                        </div>
+                    </div>
+                </li>
+                <li id="project1" class="projectitem">
+                    <div class="projectscard">
+                        <div class="leftcard">
+                            <h1>Project 1</h1>
+                            <p>This was my first project. I started it in 2018 and continued through 2019
+                            </p>
+                        </div>
+                        <div class="rightcard">
+                            <img src="{% static 'images/profilepicture.jpg' %}" alt="" class="projectimage">
+                        </div>
+                    </div>
+                </li>
+                <li id="project1" class="projectitem">
+                    <div class="projectscard">
+                        <div class="leftcard">
+                            <h1>Project 1</h1>
+                            <p>This was my first project. I started it in 2018 and continued through 2019
+                            </p>
+                        </div>
+                        <div class="rightcard">
+                            <img src="{% static 'images/profilepicture.jpg' %}" alt="" class="projectimage">
+                        </div>
+                    </div>
+                </li>
+                <li id="project1" class="projectitem">
+                    <div class="projectscard">
+                        <div class="leftcard">
+                            <h1>Project 1</h1>
+                            <p>This was my first project. I started it in 2018 and continued through 2019
+                            </p>
+                        </div>
+                        <div class="rightcard">
+                            <img src="{% static 'images/profilepicture.jpg' %}" alt="" class="projectimage">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="divider2"></div>
+    <div id="content3" class="content">
+        <div class="contactscard" id="contact1">
+            <div class="leftcontact">
+                <h1>Linkedin</h1>
+            </div>
+            <div class="rightcontact">
+                <!-- <img src="{% static 'images/linkedinicon.png' %}"  alt="" class="projectimage"> -->
+            </div>
+        </div>
+        <div class="contactscard" id="contact2">
+            <div class="leftcontact">
+                <h1>Facebook</h1>
+            </div>
+            <div class="rightcontact">
+                <!-- <img src="{% static 'images/facebookicon.png' %}"  alt="" class="projectimage"> -->
+            </div>
+        </div>
+        <div class="contactscard" id="contact3">
+            <div class="leftcontact">
+                <h1>Instagram</h1>
+            </div>
+            <div class="rightcontact">
+                <!-- <img src="{% static 'images/instagramicon.png' %}"  alt="" class="projectimage"> -->
+            </div>
+        </div>
+
+    </div>
+    <div class="divider"></div>
+    <div class="divider2"></div>
+    <div id="content4" class="content">
+    </div>
+</div>
+{% endblock %}
+
+

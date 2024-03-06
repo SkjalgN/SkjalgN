@@ -5,8 +5,8 @@ from django.views.generic import RedirectView
 
 
 urlpatterns = [
-    path('', views.base, name='base'),
+    #make the empty path route to /home
+    path('', RedirectView.as_view(url='home', permanent=True)),
     path('home', views.home, name='home'),
-    path('contact', views.contact, name='contact'),
-    path('portfolio', include('portfolio.urls')),
+    path('chess', views.chess, name='chess'),
 ]

@@ -84,6 +84,21 @@ DATABASES = {
 }
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'Cluster0',
+#         'ENFORCE_SCHEMA': False,
+#         'CLIENT': {
+#             'host': 'mongodb+srv://skjalgnysa:<password>@cluster0.xixuhot.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+#             'username': 'skjalgnysa',
+#             'password': 'skjalgnysa',
+#             'authSource': 'admin',
+#         }
+#     }
+# }
+
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

@@ -8,5 +8,6 @@ def base(request):
 def home(request): 
     return render(request, 'home.html')
 
-def chess(request):
-    return render(request, 'chess.html')
+def contact(request):
+    return render(request, 'contact.html')
+

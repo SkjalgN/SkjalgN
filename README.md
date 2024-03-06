@@ -23,7 +23,6 @@ Needed my own personal website to showcase my projects
 Here's some key features:
 * Django python based
 * JS
-* Bootstrap
 
 
   <a>
